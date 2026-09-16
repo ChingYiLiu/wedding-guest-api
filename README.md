@@ -21,3 +21,7 @@ docker run -p 8080:8080 wedding-guest-api
 ```bash
 uvicorn service.main:app --host 0.0.0.0 --port 8080 --log-config service/config/log_conf.yml
 ```
+
+## 上線說明
+透過Render部署 + Google 網頁完成前端網頁
+(目前已關閉服務)
