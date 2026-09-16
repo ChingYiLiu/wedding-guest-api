@@ -15,7 +15,7 @@ async def get_by_name(name:str, request:Request):
     if name is None or name == '':
         return '請輸入中文姓名唷！'
 
-    if '萬生' in name and len(name) <= 3:
+    if '帥哥' in name and len(name) <= 3:
         return '你是新郎吧！？裝什麼賓客 >_^'
 
     sql = f"""
@@ -35,4 +35,4 @@ async def get_by_name(name:str, request:Request):
         attend_info = df_db.attend_info.values[0]
         return f'親愛的{name_getted}，已幫您登記「{attend_info}」。'
     else:
-        return '找不到資訊耶... 請儘快聯繫 萬生/璟儀 確認出席資訊唷！' 
+        return '找不到資訊耶... 請儘快聯繫 帥哥/美女 確認出席資訊唷！'
